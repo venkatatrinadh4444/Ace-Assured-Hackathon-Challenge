@@ -10,7 +10,7 @@ const bookmarkRoutes=require('./routes/bookmarkRoutes')
 const app=express()
 const PORT=process.env.PORT || 5000
 
-app.use(cors({origin:"https://ace-assured-hackathon-challenge.vercel.app",credentials:true}))
+app.use(cors({origin:["https://ace-assured-hackathon-challenge.vercel.app","http://localhost:5173"],credentials:true}))
 app.use(cookieParser())
 app.use(express.json())
 
